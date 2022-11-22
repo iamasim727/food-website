@@ -1,0 +1,225 @@
+/* resetting css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+
+  /* font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif; */
+}
+html{
+    scroll-behavior:smooth;
+}
+/* navigation bar */
+#nav {
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* justify-content: center; */
+}
+#nav::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+/* logo and image */
+#logo {
+  margin: 10px 20px;
+
+  height: 45px;
+}
+
+#logo img {
+  height: 45px;
+  width: 45px;
+}
+
+#nav ul {
+  display: flex;
+}
+#nav ul li {
+  /* color: aliceblue; */
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+#nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+}
+#nav ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+/* hone section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 410px;
+  margin: 60px 20px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+#home::before {
+  content: '';
+  background: url('./bg2.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  /* height: 62%; */
+  height: 510px;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.8;
+}
+/* services section */
+#services {
+  display: flex;
+  margin: 30px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 10px;
+
+  margin: 5px;
+  border-radius: 23px;
+  background-color: rgba(128, 128, 128, 0.425);
+}
+#services .box img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  display: block;
+  /* padding: 3px; */
+  /* margin: auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+#services .box p {
+  font-family: 'Playfair Display', serif;
+}
+/* client section */
+
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-section {
+  height: 344px;
+  position: relative;
+}
+#client-section::before {
+  content: '';
+  position: absolute;
+  background: url('./bg11.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  opacity: 0.8;
+}
+.client-item {
+  padding: 34px;
+}
+#client .client-item img {
+  height: 120px;
+  width: 120px;
+  filter: invert(1);
+}
+
+/* contact section */
+
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+  background: url('./ccc.jpg') no-repeat center center/cover;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px ;
+}
+.contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif
+
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding:1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.contact-box form{
+    width: 40%;
+
+}
+/* footer  */
+footer{
+    color: beige;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+
+/* utilities class */
+#home h1 {
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+.h-primary {
+  font-size: 2.5rem;
+  padding: 22px;
+  font-family: 'Oswald', sans-serif;
+}
+.h-secondary {
+  font-size: 1.9rem;
+  font-family: 'Oswald', sans-serif;
+}
+.btn {
+  padding: 5px 20px;
+  border: 3px solid white;
+  background-color: rgba(240, 255, 255, 0.479);
+  margin: 25px;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* font-family: 'Playfair Display', serif; */
+}
+#center {
+  text-align: center;
+}

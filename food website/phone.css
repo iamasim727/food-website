@@ -1,0 +1,102 @@
+/* navigation */
+#nav{
+    flex-direction: column;
+}
+
+#nax::before{
+    height: 118%;
+}
+#nav ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    /* padding-bottom: px; */
+}
+/* home */
+#home{
+   height: 380px;
+   /* flex-direction: column;  */
+   padding: 0px 0px;
+   margin: 24px 20px;
+}
+#home::before{
+    height: 420px;
+
+}
+#home p{
+    font-size: 10px;
+    padding: 0px;
+}
+/* services */
+#services{
+    flex-direction: column;
+}
+#services .box{
+    width: 287px;
+    height: 370px;
+}
+#services .box img{
+    height: 208px;
+    width: 200px;
+    
+}
+
+
+/* client */
+#client-section{
+    height: 400.33px;
+}
+
+#client-section::before{
+    height: 400px;
+}
+#client{
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+
+}
+#client .client-item img{
+    width: 118px;
+    padding: 0px;
+    height: auto;
+}
+
+
+/* contact */
+
+.contact-box form{
+    width: 80%;
+}
+.contact-box label{
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    padding: 2px;
+
+}
+.contact-box input,
+.contact-box textarea{
+    width: 80%;
+    padding:0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+/* footer */
+.h-primary{
+    font-size: 26px;
+    padding: 0px;
+
+    
+}
+.h-secondary{
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+}
+.btn{
+    font-size: 12px;
+    padding: 4px 8px;
+}
